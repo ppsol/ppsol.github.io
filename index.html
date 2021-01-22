@@ -19,22 +19,57 @@
         font-family: Tahoma, Verdana, Arial, sans-serif;
       }
 
+      .dark-theme {
+        background-color: #2C2F33;
+        color: white;
+      }
+
       #join {
         color: black;
       }
       #join:hover {
         color: red;
       }
+
+      #discord img {
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+      #discord img:hover {
+        opacity: 1;
+      }
+
+      #dark {
+        outline:none;
+        border: none;
+      }
+      #dark:hover {
+        cursor: pointer;
+      }
     </style>
     <h1>PPsol</h1>
     <br>
     <p>PPsol good, PPsmol bad</p>
     <br>
-    <img src="https://d2b0sstunfvm0v.cloudfront.net/image-24973-800.jpg" alt="pp" width="200px">
+    <button id="dark" onclick="changeTheme()">
+      <img src="https://d2b0sstunfvm0v.cloudfront.net/image-24973-800.jpg" alt="pp" width="200px">
+    </button>
     <br>
     <p>Never Underestimate The Power Of ppsol</p>
     <br>
     <a id="join" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO" target="_blank">Join our cult by clicking me</a>
+    <br>
+    <br>
+    <a id="discord" href="https://bit.ly/2Y2xSRi" target="_blank">
+      <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png" alt="discord" width="80px">
+    </a>
 
   </body>
+  <script>
+    function changeTheme() {
+      const elem = document.body
+      elem.classList.toggle("dark-theme")
+    }
+    console.log("ppsol")
+  </script>
 </html>
